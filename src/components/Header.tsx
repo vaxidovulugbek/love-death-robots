@@ -1,6 +1,6 @@
 "use client";
 function Header() {
-  return <header>ITS HEADER</header>;
+  return <header className="header-redd">ITS HEADER</header>;
 }
 
 export default Header;
