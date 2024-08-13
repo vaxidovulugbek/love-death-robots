@@ -1,3 +1,65 @@
 .header-redd {
     color: red !important;
 }
+
+// .animated {
+//     opacity: 0;
+//     // transition: 0.2s linear;
+//     // animation: anim alternate 0.3s;
+//     animation-name: anim;
+//     animation-duration: 0.8s;
+//     animation-iteration-count: 1;
+//     animation-fill-mode: both;
+//     transition: opacity 0.8s;
+// }
+
+// @keyframes anim {
+//     0%   {opacity: 0;}
+//     50%   {opacity: 0.8;}
+//     100% {opacity: 1;}
+// }
+
+.menu-toggle {
+  width: 60px;
+  height: 60px;
+  left: 60px;
+  top: 60px;
+  position: fixed;
+  text-align: left;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  margin: 0;
+  z-index: 2;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 30px;
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 60px;
+  background: #fff;
+  left: 0;
+  transform: rotate(0);
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 30px;
+  float: right;
+  position: relative;
+  transform: rotate(90deg);
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 60px;
+  background: #fff;
+  left: 0;
+}
+
+.menu-toggle--active {
+  transform: rotate(45deg);
+  z-index: 9;
+}
